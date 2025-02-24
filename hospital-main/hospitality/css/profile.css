@@ -1,0 +1,87 @@
+
+
+
+#profileNav {
+    position: relative;
+    display: block; /* Ensure it is visible */
+    cursor: pointer;
+    padding-right: 8rem;
+    
+}
+
+.profile-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+}
+
+#profileContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+}
+
+#dropdownArrow {
+    font-size: 14px;
+    transition: transform 0.3s;
+    margin-left: 5px;
+}
+
+.dropdown1 {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    top: 50px;
+    right: 0;
+    width: 150px;
+    flex-direction: column;
+}
+
+.dropdown1.show {
+    display: block;
+}
+
+.dropdown1 a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown1 a:hover {
+    background: #f1f1f1;
+}
+
+.show {
+ 
+    display: flex;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+

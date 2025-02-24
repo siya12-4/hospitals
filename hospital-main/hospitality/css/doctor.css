@@ -1,0 +1,240 @@
+/*==== Doctors Css ====*/ 
+/* Centering and Styling the Title */
+.doctors-title {
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+/* Responsive H2 Styling */
+.doctors-title h2 {
+  font-size: 32px; /* Default size for larger screens */
+  margin-bottom: 10px;
+}
+
+/* Adding a Line Below the H2 */
+.doctors-title::after {
+  content: "";
+  display: block;
+  width: 100px; /* Adjust line width */
+  height: 4px; /* Line thickness */
+  background: #477cb9; /* Line color */
+  margin: 10px auto 0; /* Space between text and line */
+  border-radius: 2px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .doctors-title h2 {
+      font-size: 26px; /* Smaller font on tablets */
+  }
+  .doctors-title::after {
+      width: 80px; /* Reduce line width */
+      height: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .doctors-title h2 {
+      font-size: 22px; /* Smaller font on mobile */
+  }
+  .doctors-title::after {
+      width: 60px; /* Reduce line width further */
+      height: 2px;
+  }
+}
+
+
+/*Team Image*/
+.team-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f3f3f3; /* Light background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.team-img img {
+    width: 100%;
+    height: 200px; /* Set uniform height */
+}
+
+@media (max-width: 768px) {
+  .team-img img {
+    max-height: 200px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .team-img img {
+    max-height: 180px; /* Further adjust height for mobile */
+  }
+}
+
+.team-v1{
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.team-v1 ul {
+  position: relative;
+}
+
+.team-v1 li {
+  flex: 1 1 calc(25% - 20px); /* 4 columns on larger screens */
+  max-width: 25%;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .team-v1 li {
+    flex: 1 1 calc(50% - 20px); /* 2 columns on tablets */
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-v1 li {
+    flex: 1 1 100%; /* 1 column on mobile */
+    max-width: 100%;
+  }
+}
+
+.team-v1 li > .team-img {
+  position: relative;
+  width: 250px;
+}
+
+.team-v1 li > .team-img:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.4s ease-in-out;
+}
+
+.team-v1 li:hover > .team-img:after {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/*Team Socials*/ 
+/* Ensure the social media icons are centered */
+.team-v1 li > .team-img ul {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  display: flex;
+  gap: 10px; /* Space between icons */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  visibility: hidden; /* Hidden by default */
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+/* Make the icons visible when hovering over the team-img */
+.team-v1 li:hover > .team-img ul {
+  visibility: visible;
+}
+
+/* Style each social media icon */
+.team-v1 li > .team-img ul li {
+  display: inline-block;
+}
+
+.team-v1 li > .team-img ul li i {
+  font-size: 18px;
+  color: #eee;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  border-color: #c5c2c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.team-v1 li > .team-img ul li i.fa-x-twitter:hover {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.team-v1 li > .team-img ul li i.fa-facebook-f:hover {
+  background: #1877f2;
+  color: #fff;
+}
+
+.team-v1 li > .team-img ul li i.fa-instagram:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: #fff;
+}
+
+/*Team Description*/
+.team-v1 li > h3 {
+  color: #555;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 20px 0 7px 30px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.team-v1 li:hover > h3 {
+  color: #133dd5;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+
+.team-v1 li > h4 {
+  color: #999;
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0 0 7px 30px;
+}
+
+.team-v1 li > p {
+  color: #999;
+  margin: 20px 0;
+  position: relative;
+  text-align: left;
+  font-size: 14px ;
+  margin: 20px 0 7px 30px;
+
+}
+
+.team-v1 li > p:before {
+  left: 0;
+  top: -10px;
+  height: 1px;
+  width: 30px;
+  content: " ";
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  background: linear-gradient(to right, #133dd5, #1e90ff); 
+}
+
+/* Expand the underline smoothly on hover */
+.team-v1 li:hover > p:before {
+  width: 70%;
+  background: linear-gradient(to right, #1e90ff, #133dd5);
+}
+
+
+
+  

@@ -1,0 +1,197 @@
+/* General Form Styles */
+.sky-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+/* Spacing Between Sections */
+.sky-form section {
+  margin-bottom: 20px; /* Added spacing between form fields */
+}
+
+/* Input & Select Fields */
+.sky-form .input, .sky-form .select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.sky-form .input input, 
+.sky-form .select select {
+  border: none;
+  width: 100%;
+  background: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 16px;
+}
+  
+/* Icons */
+.sky-form .icon-append {
+  color: #135dd5;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+/* Focus Effect */
+.sky-form .input input:focus, 
+.sky-form .select select:focus {
+  border-color: #135dd5;
+  background: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sky-form .input,
+  .sky-form .select {
+      padding: 10px;
+      font-size: 14px;
+  }
+
+  .sky-form .input input,
+  .sky-form .select select {
+      font-size: 14px;
+  }
+}
+
+
+/* Button Styling */
+.sky-form .btn-u {
+  background: #284b98;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  margin-top: 10px; /* Added spacing above button */
+}
+  
+  .sky-form .btn-u:hover {
+    background: #4b37cd;
+  }
+  
+  /* Success Message */
+  .successBox {
+    display: none; /* Hidden by default */
+    background: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    border-radius: 30px;
+    margin-top: 20px; /* Added spacing above success message */
+  }
+
+/* Row Spacing */
+.sky-form .row {
+  margin-bottom: 20px; /* Added spacing between row elements */
+}
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .sky-form {
+      padding: 20px;
+    }
+    .col-md-9, .col-md-3 {
+      width: 100%;
+    }
+    .btn-u {
+      width: 100%;
+    }
+  }
+
+/* Sidebar General Styling */
+.box{
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Styling */
+.box p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .box {
+      width: 100%;
+      margin-top: 20px;
+  }
+}
+
+/* Headline Styling with Bottom Border */
+
+.hline {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically (if needed) */
+  text-align: center;
+  padding: 15px 0;
+}
+
+.hline h1 {
+  position: relative;
+  font-size: 28px;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.hline h2 {
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+/* Underline Effect for h1,h2 */
+.hline h1::after {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 5px;
+  background: #135dd5;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.hline h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #135dd5;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+/* List Styling */
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-unstyled li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.list-unstyled li i {
+  margin-right: 8px;
+  color: #28a745;
+}
+
+
+
+  

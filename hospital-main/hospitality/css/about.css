@@ -1,0 +1,264 @@
+/*== About US CSS ==*/
+
+/*= Section 1 =*/
+
+.mySlides {
+    display: none;
+    padding: 20px;
+    padding-bottom: 2px;
+  }
+  
+  .mySlides h2{
+    color: #333;
+    font-style: italic;
+    font-size: x-large;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(137, 134, 134, 0.5);
+    color: rgb(110, 108, 108);
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .slideshow-container:hover .prev,
+  .slideshow-container:hover .next {
+    opacity: 1; /* Show arrows on hover */
+  }
+  
+  
+  /* Slide Styling */
+  .col-md-6 ul,p,small{
+    color: #333;
+    font-style:italic;
+  }
+  
+  
+  .col-md-6 img {
+    width: 100%; /* Ensures responsiveness */
+    max-width: 500px; /* Prevents excessive scaling */
+    height: 300px; /* Maintains aspect ratio */
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: block; /* Ensures proper centering */
+    margin: 0 auto; /* Centers the image */
+  }
+  
+  /* Media Query for Small Screens */
+  @media screen and (max-width: 768px) {
+    /* .row {
+      flex-direction: column;
+      text-align: center;
+    } */
+  
+    .col-md-6 {
+      padding: 10px;
+    }
+  
+    .col-md-6 img {
+      max-width: 90%; /* Ensures it doesn't exceed container width */
+      margin: 0 auto;
+    }
+    
+    .prev, .next {
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      line-height: 40px;
+    }
+  }
+  
+  /*Blockquote*/
+  blockquote {
+      padding: 5px 15px;
+      /* border-left-width: 2px; */
+    color: #333;
+    font-style: italic;
+    border-left: 4px solid #265885;
+  }
+  
+  blockquote p {
+      font-size: 14px;
+      font-weight: 400;
+    
+  }
+  blockquote:hover {
+      border-color: #134ad5;
+  }
+  
+  /*= About us Section 2 =*/
+  
+  .aboutSection {
+    background-color: #f9f9f9;
+    width: 100vw; /* Ensures full width */
+    padding: 50px 0;
+    max-width: 100%; /* Prevents any extra width */
+    padding: 50px 0;
+    margin: 0 auto;
+  }
+  
+  .service-block-v6 {
+    display: flex;
+    justify-content: center; /* Centers columns */
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .service-block-v6 .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    min-height: 200px; /* Ensures equal height */
+  }
+  
+  .service-block-v6 .service-desc h2 {
+    color: #555;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  
+  .service-block-v6 .service-desc p {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  i.icon-custom{
+    color: #555;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    display: inline-block;
+    border: solid 2px #555;
+  }
+  
+  i .icon{
+    width: 20px;
+    margin-bottom: 16px;
+  
+  }
+  
+  .rounded-x {
+    border-radius: 50% !important;
+  }
+  
+  i.icon-color-u {
+    color: #135dd5;
+    border: solid 2px #138bd5;
+  }
+  
+  /*= About Us Section3 =*/
+  /* Section Title Styling */
+  .section-title {
+    font-size: 28px;
+    text-transform: uppercase;
+  
+  }
+  
+  .section-line {
+    width: 50px;
+    height: 3px;
+    background-color: #134dd5;
+    margin: 10px auto 20px;
+    border-radius: 50px;
+  }
+  
+  .section-subtitle {
+    color: #555;
+    font-size: 16px;
+  }
+  
+  /* Service Block Styling */
+  .service-block-v8 {
+    display: flex;
+    background: #fff;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .service-block-v8:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Icon Styling */
+  .service-block-v8 .icon {
+    position: fixed;
+    width: 20px; /* Default size */
+    height: 20px;
+    background: #f0f0f0;
+    border-radius: 30%;
+    margin-left: 5px;
+  }
+  
+  /* Description Styling */
+  .service-block-desc {
+    flex: 1;
+    padding-left: 40px;
+  }
+  
+  .service-block-desc h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+    color: #555;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  
+  /* Underline Effect */
+  .service-block-desc h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 30px;
+    height: 2px;
+    background-color: #134dd5;
+  }
+  
+  .service-block-desc p{
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+    padding-top: 10px;
+  }
+  
+  /* Responsive Fixes */
+  @media (max-width: 768px) {
+    .service-block-v8 {
+        flex-direction: column;
+        text-align: center;
+    }
+  }
+  

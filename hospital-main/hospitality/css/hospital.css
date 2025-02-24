@@ -1,0 +1,29 @@
+/* ==== hospitals ==== */
+/* Dropdown Styling */
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #fffffb;
+	min-width: 200px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	z-index: 9;
+}
+
+.dropdown-content a {
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #636365;
+	color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
